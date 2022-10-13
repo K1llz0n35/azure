@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+      <title>Gavin's Website</title>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3969065369361779"
+     crossorigin="anonymous"></script>
+      <style type="text/css">
+            body {
+                background: rgb(191, 0, 255);
+                color: rgb(45, 45, 45);
+                padding: 10px;
+                font-family: arial;
+            }
+            header {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            h1 {
+                margin: 10px;
+            }
+            #all-contents {
+                max-width: 800px;
+                margin: auto;
+            }
+    
+            /* navigation menu */
+            nav {
+                background: rgb(255, 0, 20);
+                margin: 0 auto;
+                display: flex;
+                padding: 10px;
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: black;
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: black;
+            }
+    
+            /* main container area beneath menu */
+            main {
+                background: rgb(255, 0, 20);
+                display: flex;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+            
+            /* portfolio styles */
+            #portfolio {
+                list-style-type: none;
+                padding-left: 0;
+            }
+            
+            #portfolio li {
+                background: #fff;
+                padding: 10px;
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
+            
+            #portfolio li:hover {
+                background: #eee;
+            } 
+            
+            #portfolio a {
+                text-decoration: none;
+                color: #454545;
+            }
+        </style>
+    </head>
+    <body>
+      <div id="all-contents">
+        <nav>
+            <header>Gavin Hernandez's Portfolio</header>
+            <ul>
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="portfolio.html">Portfolio</a>
+                </li>
+                <li><a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+         <main>
+            <form id="Contact" name="Contact" method="POST" enctype="multipart/form-data"
+            action="http://www.ghernandez.org/fm.php">
+            <h1 class="TectiteFormDesignerHeading" id="heading1">Contact Me</h1>
+            <p id="para1">Please contact me using this form. I usually respond within about 2 hours.</p>
+            <div class="TectiteFormDesignerField">
+                 <label for="field1" class="TectiteRequiredField">Your name:</label><input type="text" id="field1"
+                      name="FullName" />
+            </div>
+            <div class="TectiteFormDesignerField">
+                 <label for="field3" class="TectiteRequiredField">Your phone number:</label><input type="text"
+                      id="field3" name="Phone" />
+            </div>
+            <div class="TectiteFormDesignerField">
+                 <label for="field5" class="TectiteRequiredField">Your message:</label><textarea id="field5"
+                      name="Message" rows="6" cols="40"></textarea>
+            </div>
+            <div class="TectiteFormDesignerField TectiteButtonField">
+                 <input type="submit" id="submitbutton" value="Submit" name="submitbutton" />
+            </div>
+
+            <input type="hidden" name="required"
+                 value="FullName:Your name;,Phone:Your phone number;,Message:Your message;" />
+            <input type="hidden" name="derive_fields" value="realname = FullName,email = " />
+            <input type="hidden" name="subject" value="Contact" />
+            <input type="hidden" name="good_url" value="http://www.ghernandez.org/thanks.html" />
+            <input type="hidden" name="recipients" value="boxhernandez9zuYiD8gmail.com" />
+       </form>
+        </main>
+      </div>
+    </body>
+</html>
